@@ -1,3 +1,5 @@
+#ifndef CARDS_H
+#define CARDS_H
 #include <string>
 using namespace std;
 
@@ -63,8 +65,13 @@ constexpr const char* const RANK_NAMES_BY_WEIGHT[] = {
 };
 const int NUM_RANKS = 13;
 
+// operator overlaods
 bool operator==(const Card& lhs, const Card& rhs);
 
 bool operator!=(const Card& lhs, const Card& rhs);
 
+bool operator<(const Card& lhs, const Card& rhs);
+
 ostream &operator<<(ostream &output, const Card & card);
+
+#endif
