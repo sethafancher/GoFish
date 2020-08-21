@@ -154,14 +154,14 @@ public:
 	}
 
 private:
+	// the player's name
+	string name;
 	// the player's score
 	int score;
 	// a deque holding the player's hand
 	deque<Card> hand;
 	// a vector holdig the current cards being given by a player
 	vector<Card> cards_being_given;
-	// the player's name
-	string name;
 	// USELESS FOR THIS CLASS
 	map<string, int> card_age;
 };
@@ -269,6 +269,7 @@ public:
 				}
 			}
 		}
+		return hand[0];
 	}
 
 	// AI algorithm for choosing a player
@@ -294,6 +295,7 @@ public:
 				return i;
 			}
 		}
+		return 0;
 	}
 
 	// checks to see if the player has a requested rank
@@ -384,14 +386,14 @@ public:
 	}
 
 private:
+	// the player's name
+	string name;
 	// the player's score
 	int score;
 	// a deque holding the player's hand
 	deque<Card> hand;
 	// a vector holdig the current cards being given by a player
 	vector<Card> cards_being_given;
-	// the player's name
-	string name;
 	// a map matching each rank in a player's hand with its age
 	map<string, int> card_age;
 };

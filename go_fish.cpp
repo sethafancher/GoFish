@@ -21,7 +21,7 @@ public:
 
 // ctor; intializes players, score, and pack
 GameADT(char* argv[], int argc)
-: pack(), scores() {
+: scores(), pack() {
 	for (int i = 1; i < argc; i = i + 2) {
 		if (strcmp(argv[i + 1], "Human") == 0) {
 			string name = argv[i];
@@ -167,7 +167,6 @@ bool turn(int current_player) {
 
 	// catch the exception if needed
 	catch (const PlayerSelectionError& error) {
-		error;
 		cout << "ERROR: MUST CHOOSE A PLAYER FROM THE GIVEN LIST USING ITS ASSIGNED NUMBER. TURN ENDED AS PENALTY." << endl;
 	}
 	// print out a turn separation line

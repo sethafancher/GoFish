@@ -35,6 +35,7 @@ public:
 	virtual void sort_hand() = 0;
 	// increments the age of the cards in a player's hand by one
 	virtual void add_count() = 0;
+	virtual ~Player() {}
 };
 
 // constructs new players
