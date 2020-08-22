@@ -8,7 +8,7 @@ This project is created with:
 * C++
 
 ### Setup
-This project is a simple console application. After installing the files locally and navigating their location, run the following commands that utilize the given Makefile in the command line:
+This project is a simple console application. After installing the files locally and navigating to their location, run the following commands that utilize the given Makefile in the command line:
 
 ```
 
